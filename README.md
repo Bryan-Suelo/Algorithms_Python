@@ -98,4 +98,5 @@ O(log n), known as logarithmic time complexity, indicates that the execution tim
      - Operations on balanced binary search trees: Inserting, deleting, or searching for elements.
      - Heap operations: Inserting or removing elements from a heap data structure.
 5. **Mathematical Representation**:
-   - In formal terms, an algorithm is said to have O(log n) complexity if the number of operations required to complete the algorithm can be expressed as a logarithmic function of the input size. The base of the logarithm is typically 2, reflecting the binary nature of many algorithms that exhibit this complexity
+   - In formal terms, an algorithm is said to have O(log n) complexity if the number of operations required to complete the algorithm can be expressed as a logarithmic function of the input size. The base of the logarithm is typically 2, reflecting the binary nature of many algorithms that exhibit this complexity.
+
