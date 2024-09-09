@@ -82,7 +82,7 @@ O(1), also known as constant time complexity, indicates that the execution time 
 
 ### Big O: O(log n)
 
-O(log n), known as logarithmic time complexity, indicates that the execution time of an algorithm increases logarithmically as the input size (n) increases.
+O(log n), known as logarithmic time complexity, indicates that the execution time of an algorithm increases logarithmically as the input size (n) increases. Associated with divide and conquer.
 
 #### Key Elements of O(log n)
 

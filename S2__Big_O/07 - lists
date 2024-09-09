@@ -1,0 +1,19 @@
+my_list = [11, 3, 23, 7]
+print(my_list)
+
+# Add element end of list
+my_list.append(17)  # O(1) Because no reindexing needed
+print(my_list)  # [11, 3, 23, 7, 17]
+
+# Remove element end of list
+my_list.pop()   # O(1) Because no reindexing needed
+print(my_list)  # [11, 3, 23, 7]
+
+# Remove first element of list
+my_list.pop(0)  # O(n) Because reindexing needed
+print(my_list)  # [3, 23, 7]
+
+# Add element as first in list
+my_list.insert(0, 11)    # O(n) Because reindexing needed
+# n represents the number of items
+print(my_list)  # [11, 3, 23, 7]

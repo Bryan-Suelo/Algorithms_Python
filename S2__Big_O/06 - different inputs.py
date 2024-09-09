@@ -8,7 +8,7 @@ def print_items_v1(a, b):
     for j in range(b):
         print(j)
 
-def print_items_v1(a, b):
+def print_items_v2(a, b):
     # The following inputs give O(a * b)
     for i in range(a):        
         for j in range(b):
