@@ -100,3 +100,28 @@ O(log n), known as logarithmic time complexity, indicates that the execution tim
 5. **Mathematical Representation**:
    - In formal terms, an algorithm is said to have O(log n) complexity if the number of operations required to complete the algorithm can be expressed as a logarithmic function of the input size. The base of the logarithm is typically 2, reflecting the binary nature of many algorithms that exhibit this complexity.
 
+## Section 4. Linked List
+
+### Overview
+
+A linked list is a linear data structure that consists of a series of elements called nodes, where each node contains data and a reference (or pointer) to the next node in the sequence. Unlike arrays, linked lists do not store their elements in contiguous memory locations, allowing for dynamic memory allocation and efficient insertion and deletion of nodes.
+
+### Key Characteristics
+
+1. Node Structure:
+   - Each node in a linked list typically contains two components:
+     - Data: The value or information stored in the node.
+     - Next Pointer: A reference to the next node in the list. The last node's next pointer points to null, indicating the end of the list.
+2. Dynamic Size:
+   - Linked lists can grow and shrink in size dynamically, making them more flexible than arrays, which have a fixed size determined at creation.
+3. Types of Linked Lists:
+   - **Singly Linked List**: Each node points to the next node, allowing traversal in one direction.
+   - **Doubly Linked List**: Each node contains pointers to both the next and the previous nodes, enabling traversal in both directions.
+   - **Circular Linked List**: The last node points back to the first node, forming a circle, which allows for continuous traversal.
+4. Operations:
+   - **Insertion**: Nodes can be added at the beginning, end, or any position within the list. This involves adjusting the pointers of the neighboring nodes.
+   - **Deletion**: Removing a node requires updating the pointers of adjacent nodes to maintain the list's integrity.
+   - **Searching**: To find a specific value, the list must be traversed from the head node until the value is found or the end of the list is reached.
+5. Performance:
+   - Accessing elements in a linked list is generally slower than in arrays because it requires sequential traversal from the head node to the desired node. This results in a linear time complexity of O(n) for search operations, while insertion and deletion can be performed in O(1) time if the position is known.
+
