@@ -127,11 +127,11 @@ A linked list is a linear data structure that consists of a series of elements c
 
 ## Section 5. Doubly Linked List
 
-## Overview
+### Overview of Doubly Linked Lists
 
 A doubly linked list is a type of linked list in which each node contains three fields: two pointers (or references) and one data field. The two pointers allow for navigation in both directions—forward and backward—making it easier to traverse the list compared to a singly linked list.
 
-### Key Characteristics
+### Key Characteristics of Doubly Linked Lists
 
 1. **Node Structure**:
    - Each node in a doubly linked list consists of:
@@ -149,7 +149,7 @@ A doubly linked list is a type of linked list in which each node contains three 
 5. Performance:
    - Accessing elements in a doubly linked list is generally slower than in arrays due to the need for traversal. However, insertion and deletion operations can be performed in O(1) time if the position is known, as both pointers can be easily adjusted.
 
-### Advantages and Disadvantages
+### Advantages and Disadvantages of Doubly Linked Lists
 
 1. **Advantages**:
    - **Bidirectional Traversal**: The ability to traverse in both directions simplifies certain operations and algorithms.
@@ -157,3 +157,119 @@ A doubly linked list is a type of linked list in which each node contains three 
 2. **Disadvantages**:
    - **Increased Memory Overhead**: Each node requires additional memory for the extra pointer, which can be significant in large lists.
    - **Complex Implementation**: Managing two pointers per node can complicate the implementation and increase the potential for errors, especially during insertion and deletion.
+
+## Section 6. Stacks & Queues
+
+### Stacks
+
+#### Overview of Stacks
+
+A stack is a linear data structure that follows the Last In, **First Out (LIFO)** principle, meaning that the last element added to the stack is the first one to be removed. This structure is analogous to a stack of plates: you can only add or remove the top plate.
+
+#### Key Characteristics of Stacks
+
+1. **Basic Operations**:
+   - **Push**: This operation adds an element to the top of the stack.
+   - **Pop**: This operation removes the element from the top of the stack and returns it.
+   - **Peek** (or Top): This operation retrieves the value of the top element without removing it from the stack.
+   - **IsEmpty**: This operation checks whether the stack is empty.
+2. Dynamic Size:
+   - Stacks can grow and shrink dynamically as elements are added or removed. This flexibility allows for efficient memory usage.
+3. Implementation:
+   - Stacks can be implemented using arrays or linked lists.
+     - **Array-based Stack**: Uses a fixed-size array to store elements. If the stack exceeds its capacity, it may require resizing.
+     - **Linked List-based Stack**: Uses nodes to store elements, allowing for dynamic sizing without the need for resizing.
+4. Applications:
+   - Stacks are widely used in various applications, including:
+     - **Function Call Management**: Keeping track of function calls in programming languages (call stack).
+     - **Expression Evaluation**: Evaluating mathematical expressions and parsing syntax in compilers.
+     - **Backtracking Algorithms**: Managing states in algorithms that require exploring multiple paths, such as maze solving.
+5. Performance:
+   - The time complexity for push, pop, and peek operations is O(1), making stacks very efficient for these operations.
+
+#### Advantages and disadvantages of Stacks
+
+1. **Advantages**:
+   - Simple and easy to implement.
+   - Efficient for managing data in a LIFO manner.
+   - Useful in various algorithmic applications.
+2. **Disadvantages**:
+   - Limited access: Only the top element can be accessed directly, which can be a limitation in certain scenarios.
+   - Fixed size in array-based implementations can lead to overflow if not managed properly.
+
+### Queues
+
+#### Overview of Queues
+
+A queue is a linear data structure that follows the First In, **First Out (FIFO)** principle, meaning that the first element added to the queue will be the first one to be removed. This structure is analogous to a line of people waiting for service: the person who arrives first is served first.
+
+#### Key Characteristics of Queues
+
+1. **Basic Operations**:
+   - **Enqueue**: This operation adds an element to the rear (or back) of the queue.
+   - **Dequeue**: This operation removes the element from the front of the queue and returns it.
+   - **Peek (or Front)**: This operation retrieves the value of the front element without removing it from the queue.
+   - **IsEmpty**: This operation checks whether the queue is empty.
+2. **Dynamic Size**:
+   - Queues can grow and shrink dynamically as elements are added or removed, allowing for efficient memory usage.
+3. **Implementation**:
+   - Queues can be implemented using arrays or linked lists.
+     - **Array-based Queue**: Uses a fixed-size array to store elements. If the queue exceeds its capacity, it may require resizing or circular implementation to efficiently use space.
+     - **Linked List-based Queue**: Uses nodes to store elements, allowing for dynamic sizing without the need for resizing.
+4. **Applications**:
+   - Queues are widely used in various applications, including:
+     - **Task Scheduling**: Managing tasks in operating systems and print spooling.
+     - **Breadth-First Search (BFS)**: In graph algorithms, queues help explore nodes level by level.
+     - **Buffer Management**: In data streaming and communication systems, queues manage data packets.
+5. **Performance**:
+   - The time complexity for enqueue and dequeue operations is O(1), making queues very efficient for these operations.
+
+#### Advantages and disadvantages of Queues
+
+1. **Advantages**:
+   - Simple and easy to implement.
+   - Efficient for managing data in a FIFO manner.
+   - Useful in various algorithmic applications.
+2. **Disadvantages**:
+   - Limited access: Only the front element can be accessed directly, which can be a limitation in certain scenarios.
+   - Fixed size in array-based implementations can lead to overflow if not managed properly.
+
+## Section 7. Trees
+
+### Overview of Trees
+
+In computer science, a tree is a hierarchical data structure that consists of nodes connected by edges. It is used to represent relationships between data in a way that allows for efficient searching, insertion, and deletion operations.
+
+### Key Characteristics of Trees
+
+1. **Structure**:
+   - A tree consists of a root node, which is the topmost node, and child nodes that branch out from the root. Each node can have zero or more child nodes.
+   Nodes that do not have any children are called leaf nodes.
+2. **Hierarchy**:
+   - Trees are organized in a hierarchical manner, where each node (except the root) has exactly one parent node. This structure allows for a clear representation of relationships.
+3. **Types of Trees**:
+   - **Binary Tree**: Each node has at most two children, referred to as the left and right child.
+   - **Binary Search Tree (BST)**: A binary tree where the left child contains values less than the parent node, and the right child contains values greater than the parent node, allowing for efficient searching.
+   - **Balanced Trees**: Such as AVL trees and Red-Black trees, which maintain a balanced height to ensure efficient operations.
+   - **N-ary Tree**: A tree where each node can have up to N children.
+4. **Traversal Methods**:
+   - Trees can be traversed in several ways, including:
+     - **Pre-order Traversal**: Visit the root, then recursively visit the left subtree, followed by the right subtree.
+     - **In-order Traversal**: Recursively visit the left subtree, visit the root, and then the right subtree (commonly used in BSTs to retrieve sorted data).
+     - **Post-order Traversal**: Recursively visit the left subtree, the right subtree, and then the root.
+     - **Level-order Traversal**: Visit nodes level by level from top to bottom.
+5. **Applications**:
+   - Trees are widely used in various applications, including:
+     - **File Systems**: Representing directories and files in a hierarchical structure.
+     - **Databases**: Indexing data for efficient retrieval.
+     - **Artificial Intelligence**: Decision trees for making decisions based on conditions.
+
+### Advantages and disadvantages of Trees
+
+1. **Advantages**:
+   - Hierarchical Representation: Trees provide a natural way to represent hierarchical data.
+   - Efficient Searching: Especially in binary search trees, where search operations can be performed in O(log n) time on average.
+   - Dynamic Size: Trees can grow and shrink dynamically as data is added or removed.
+2. **Disadvantages**:
+   - Complexity: Implementing and maintaining balanced trees can be complex.
+   - Memory Overhead: Each node requires additional memory for pointers to child nodes.
