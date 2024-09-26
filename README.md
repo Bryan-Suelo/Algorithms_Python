@@ -351,3 +351,43 @@ A graph is a mathematical structure used to model pairwise relationships between
      - **Dijkstra's Algorithm**: An algorithm for finding the shortest path between nodes in a weighted graph.
      - **Kruskal's and Prim's Algorithms**: Algorithms for finding the minimum spanning tree of a graph.
 
+## Section 10. Heap
+
+### Overview of Heaps
+
+A graph is a mathematical structure used to model pairwise relationships between objects. It consists of a set of vertices (or nodes) and a set of edges that connect pairs of vertices. Graphs are widely used in various fields, including computer science, biology, social sciences, and transportation, to represent and analyze relationships and networks.
+
+### Key Components of Heaps
+
+1. **Vertices (Nodes)**:
+   - The fundamental units of a graph, representing entities or objects. For example, in a social network graph, each person can be represented as a vertex.
+2. **Edges**:
+   - The connections between vertices. Edges can be directed (indicating a one-way relationship) or undirected (indicating a two-way relationship). For instance, in a directed graph, an edge from vertex A to vertex B indicates a relationship from A to B, but not necessarily from B to A.
+3. **Types of Graphs**:
+   - **Simple Graph**: A graph without loops (edges connecting a vertex to itself) and multiple edges between the same pair of vertices.
+   - **Weighted Graph**: A graph where edges have weights (or costs) associated with them, often used to represent distances or costs in networks.
+   - **Cyclic Graph**: A graph that contains at least one cycle (a path that starts and ends at the same vertex).
+   - **Acyclic Graph**: A graph that does not contain any cycles.
+   - **Connected Graph**: A graph in which there is a path between every pair of vertices.
+   - **Disconnected Graph**: A graph that has at least two vertices with no path connecting them.
+4. **Graph Representation**:
+   - Graphs can be represented in various ways, including:
+     - **Adjacency Matrix**: A 2D array where the element at row i and column j indicates the presence (and possibly the weight) of an edge between vertices i and j.
+     - **Adjacency List**: A collection of lists or arrays where each list corresponds to a vertex and contains the vertices that are adjacent to it.
+
+### Applications of Heaps
+
+   - Graphs have numerous applications across different domains, including:
+     - **Social Networks**: Modeling relationships between individuals or organizations.
+     - **Transportation Networks**: Representing routes and connections in road systems, flight paths, or public transit.
+     - **Computer Networks**: Analyzing connections between computers, routers, and servers.
+     - **Biological Networks**: Understanding interactions between genes, proteins, or species.
+     - **Recommendation Systems**: Using graphs to model user preferences and item relationships.
+
+### Algorithms of Heaps
+
+   - Several algorithms are commonly used to analyze and manipulate graphs, including:
+     - **Depth-First Search (DFS)**: An algorithm for traversing or searching through a graph by exploring as far as possible along each branch before backtracking.
+     - **Breadth-First Search (BFS)**: An algorithm for traversing or searching through a graph level by level, exploring all neighbors of a vertex before moving to the next level.
+     - **Dijkstra's Algorithm**: An algorithm for finding the shortest path between nodes in a weighted graph.
+     - **Kruskal's and Prim's Algorithms**: Algorithms for finding the minimum spanning tree of a graph.
