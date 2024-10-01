@@ -391,3 +391,31 @@ A graph is a mathematical structure used to model pairwise relationships between
      - **Breadth-First Search (BFS)**: An algorithm for traversing or searching through a graph level by level, exploring all neighbors of a vertex before moving to the next level.
      - **Dijkstra's Algorithm**: An algorithm for finding the shortest path between nodes in a weighted graph.
      - **Kruskal's and Prim's Algorithms**: Algorithms for finding the minimum spanning tree of a graph.
+
+## Section 11. Recursion
+
+### Overview of recursion
+
+Recursion is a programming and mathematical concept where a function calls itself directly or indirectly to solve a problem. This technique is particularly useful for breaking down complex problems into simpler subproblems, allowing for elegant and concise solutions.
+
+### Key concepts of recursion
+
+1. **Recursive Function**:
+   - A recursive function is one that includes a call to itself within its definition. This self-referential nature allows the function to repeat its process on smaller instances of the same problem.
+2. **Base Case**:
+   - Every recursive function must have a base case, which is a condition that stops the recursion. The base case prevents infinite recursion and provides a simple, non-recursive solution to the simplest instance of the problem.
+3. **Recursive Case**:
+   - This part of the function handles the general case, where the function calls itself with modified arguments, gradually approaching the base case.
+
+### How recursion works
+
+When a recursive function is called, it performs its operations and may call itself with new parameters. Each call creates a new instance of the function, which has its own set of parameters and local variables. This continues until the base case is reached, at which point the function begins to return values back through the chain of calls, ultimately providing a solution to the original problem.
+
+### Advantages and disadvantages
+
+1. **Advantages**:
+   - **Simplicity**: Recursive solutions can be more straightforward and easier to understand than their iterative counterparts.
+   - **Natural Fit**: Some problems, especially those involving hierarchical structures (like trees), are naturally suited for recursive solutions.
+2. **Disadvantages**:
+   - **Performance**: Recursive functions can lead to increased memory usage due to the call stack, and excessive recursion can result in stack overflow errors.
+   - **Overhead**: Each function call incurs overhead, which can make recursion less efficient than iteration for certain problems.
