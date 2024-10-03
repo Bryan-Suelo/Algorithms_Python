@@ -419,3 +419,43 @@ When a recursive function is called, it performs its operations and may call its
 2. **Disadvantages**:
    - **Performance**: Recursive functions can lead to increased memory usage due to the call stack, and excessive recursion can result in stack overflow errors.
    - **Overhead**: Each function call incurs overhead, which can make recursion less efficient than iteration for certain problems.
+
+## Section 12. Breadth First Search
+
+### Overview of Breadth First Search (BFS)
+
+Breadth-First Search (BFS) is a fundamental algorithm used for traversing or searching tree and graph data structures. It explores all the nodes at the present depth level before moving on to nodes at the next depth level. This approach ensures that the closest nodes to the starting point are visited first, making BFS particularly useful for finding the shortest path in unweighted graphs.
+
+### How BFS works?
+
+1. **Initialization**:
+   - BFS starts at a specified node, often referred to as the "root" in tree structures or the "source" in graph contexts.
+   - A queue is used to keep track of nodes that need to be explored. The queue follows the First-In-First-Out (FIFO) principle.
+2. **Exploration**:
+   - The algorithm dequeues a node from the front of the queue, processes it (e.g., checking if it meets a certain condition), and then enqueues all its adjacent (or child) nodes that have not yet been visited.
+   - This process continues until all reachable nodes have been explored or the target node is found.
+3. **Termination**:
+   - BFS terminates when the queue is empty, indicating that all nodes at the current depth have been processed.
+
+### Characteristics of BFS
+
+1. **Time Complexity**:
+   - The time complexity of BFS is O(V + E), where V is the number of vertices and E is the number of edges in the graph. This is because each vertex and edge is processed once.
+2. **Space Complexity**:
+   - The space complexity is O(V) due to the storage requirements of the queue and the visited set.
+3. **Applications**:
+   - BFS is commonly used in various applications, including:
+     - Finding the shortest path in unweighted graphs.
+     - Solving puzzles and games (like the shortest path in mazes).
+     - Web crawling and social networking applications to explore connections.
+
+### Advantages and Disadvantages
+
+1. **Advantages**:
+   - Guarantees the shortest path in unweighted graphs.
+   - Simple and easy to implement using a queue.
+2. **Disadvantages**:
+   - Can consume a lot of memory, especially for wide graphs, as it stores all nodes at the current depth level.
+   - Not suitable for finding the shortest path in weighted graphs without modifications (like Dijkstra's algorithm).
+
+## Section 13.
