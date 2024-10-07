@@ -458,4 +458,76 @@ Breadth-First Search (BFS) is a fundamental algorithm used for traversing or sea
    - Can consume a lot of memory, especially for wide graphs, as it stores all nodes at the current depth level.
    - Not suitable for finding the shortest path in weighted graphs without modifications (like Dijkstra's algorithm).
 
-## Section 13.
+## Section 13. Bubble Sort
+
+### Overview of Bubble Sort
+
+Bubble Sort is a simple comparison-based sorting algorithm that repeatedly steps through a list, compares adjacent elements, and swaps them if they are in the wrong order. This process continues until no swaps are needed, indicating that the list is sorted. The algorithm is named "bubble sort" because smaller elements "bubble" to the top of the list (or the beginning, in the case of ascending order).
+
+### How Bubble Sort works
+
+1. **Initialization**:
+   - Start at the beginning of the list.
+2. **Comparison and Swapping**:
+   - Compare the current element with the next element.
+   - If the current element is greater than the next element (for ascending order), swap them.
+   - Move to the next element and repeat the comparison until the end of the list is reached.
+3. **Repeat**:
+   - After completing one pass through the list, the largest element will have "bubbled" to its correct position at the end of the list.
+   - Repeat the process for the remaining unsorted portion of the list until no swaps are needed in a complete pass.
+
+### Characteristics of Bubble Sort
+
+1. Time Complexity:
+   - Worst-case: O(n²) - occurs when the list is sorted in reverse order.
+   - Average-case: O(n²) - on average, the algorithm will require about n²/4 comparisons and swaps.
+   - Best-case: O(n) - occurs when the list is already sorted, and only one pass is needed.
+2. **Space Complexity**:
+   - O(1) - Bubble Sort is an in-place sorting algorithm, meaning it requires only a constant amount of additional space.
+3. **Stability**:
+   - Bubble Sort is a stable sorting algorithm, meaning that it preserves the relative order of equal elements.
+
+### Advantages and Disadvantages
+
+1. **Advantages**:
+   - Simplicity: The algorithm is easy to understand and implement, making it a common introductory algorithm in computer science education.
+   - No Additional Memory: It sorts the list in place without requiring additional storage.
+2. **Disadvantages**:
+   - Inefficiency: Bubble Sort is inefficient for large datasets compared to more advanced algorithms like Quick Sort or Merge Sort.
+   - Performance: The average and worst-case time complexities make it impractical for large lists.
+
+## Section 14. Merge Sort
+
+### Overview of Merge Sort
+
+Merge Sort is a highly efficient sorting algorithm that follows the divide and conquer paradigm. It divides the input array into smaller subarrays, sorts those subarrays, and then merges them back together in a sorted manner. This algorithm is particularly effective for large datasets and is widely used in various applications due to its predictable performance.
+
+### How Merge Sort Works
+
+1. **Divide**:
+   - The array is recursively divided into two halves until each subarray contains a single element. A single element is inherently sorted.
+2. **Conquer**:
+   - The sorted subarrays are then merged back together. During the merging process, the algorithm compares the elements of the subarrays and arranges them in order.
+3. **Combine**:
+   - The merging continues until all subarrays are combined into a single sorted array.
+
+### Characteristics of Merge Sort
+
+1. **Time Complexity**:
+   - **Worst-case**: O(n log n) - occurs in all cases due to the consistent division and merging process.
+   - **Average-case**: O(n log n) - similar to the worst case.
+   - **Best-case**: O(n log n) - even if the array is already sorted, the algorithm still performs the same number of operations.
+2. **Space Complexity**:
+   - O(n) - Merge Sort requires additional space for the temporary arrays used during the merging process.
+3. **Stability**:
+   - Merge Sort is a stable sorting algorithm, meaning that it maintains the relative order of equal elements.
+
+### Advantages and Disadvantages
+
+1. **Advantages**:
+   - **Efficiency**: Merge Sort is very efficient for large datasets and performs consistently well across different scenarios.
+   - **Stable**: It preserves the order of equal elements, which can be important in certain applications.
+   - **Parallelizable**: The divide and conquer approach allows for parallel processing, making it suitable for multi-threaded environments.
+2. **Disadvantages**:
+   - **Space Usage**: The requirement for additional memory can be a drawback, especially for large datasets.
+   - **Overhead**: The recursive nature of the algorithm can introduce overhead, making it less efficient for small datasets compared to simpler algorithms like Insertion Sort.
